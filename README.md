@@ -5,6 +5,8 @@
   Auto position the theme changes automatically based on the time of day. </h4>
   
 <img src="https://github.com/gitjona/pythonClock/blob/main/Img/Snap_auto.PNG" width="300" height="300">
+<img src="https://github.com/gitjona/pythonClock/blob/main/Img/Snap_light.PNG" width="300" height="300">
+<img src="https://github.com/gitjona/pythonClock/blob/main/Img/Snap_dark.PNG" width="300" height="300">
 
 
 <h3> Install Python Microsoft Store </h3>
