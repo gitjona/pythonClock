@@ -100,7 +100,7 @@ def main():
         if caption[0] == "   ":
             darkTheme = False
         
-        if(darkTheme):
+        if darkTheme:
             screen.fill(blackDark)
             light = whiteDark
             dark = blackDark
