@@ -33,12 +33,6 @@ def text(text, size, color, position):
     text_rect = text.get_rect(center=(position))
     screen.blit(text, text_rect)
 
-def textArial(text, size, color, position):
-    font = pygame.font.SysFont("Arial", size, True, False)
-    text = font.render(text, True, color)
-    text_rect = text.get_rect(center=(position))
-    screen.blit(text, text_rect)
-
 
 def polar_to_cartesian(r, theta):
     x = r * sin(pi * theta / 180)
@@ -56,6 +50,11 @@ def main():
                 run = False          
 
             # Teeman vaihto
+            # Voisivat olla teksimuodossa, mutta siisteyden takia tälläinen toteutus
+            # " " -> AUTO
+            # "  " -> DARK
+            # "   " -> LIGHT
+
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if caption[0] == "   ":
                     pygame.display.set_caption(" ")
@@ -115,6 +114,7 @@ def main():
         # -------------------------
 
         # Konvertointi oikeaan muotoon
+        # 6:3:2 -> 06:03:02
         if(second < 10):
             strSecond = "0" + str(second)
         else:
